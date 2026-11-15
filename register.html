@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Computer Society - Register</title>
+</head>
+<body>
+    <a href="index.html">Home</a> |
+<a href="events.html">Events</a> |
+<a href="register.html">Register</a>
+<h1>Register</h1>
+<form action="register.html" method="get"></form>
+  <fieldset>
+  <legend>Personal Details</legend>
+  <label for="fullname">Full name:</label>
+<input type="text" id="fullname" name="fullname" placeholder="Enter your full name" autofocus required>
+  <br><br>
+  <label for="email">Email:</label>
+<input type="email" id="email" name="email" required placeholder="name@example.com">
+<br><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required minlength="8">
+<br><br>
+
+<label for="phone">Phone:</label>
+<input type="tel" id="phone" name="phone" placeholder="03001234567" pattern="[0-9]{11}" title="Enter exactly 11 digits">
+<br><br>
+
+<label for="website">Website (optional):</label>
+<input type="url" id="website" name="website" placeholder="https://">
+<br><br>
+
+<label for="semester">Semester:</label>
+<input type="number" id="semester" name="semester" min="1" max="8">
+<br><br>
+
+<label for="dob">Date of birth:</label>
+<input type="date" id="dob" name="dob" required>
+<br><br>
+</fieldset>
+<br>
+<label for="colour">Favourite colour:</label>
+<input type="color" id="colour" name="colour" value="#1f3a5f">
+<br><br>
+
+<label for="level">Experience level:</label>
+<input type="range" id="level" name="level" min="1" max="10" value="5">
+<br><br>
+<fieldset>
+  <legend>Preferences</legend>
+
+  Gender:
+  <input type="radio" id="m" name="gender" value="male" checked>
+  <label for="m">Male</label>
+  <input type="radio" id="f" name="gender" value="female">
+  <label for="f">Female</label>
+  <br><br>
+
+  <label for="dept">Department:</label>
+  <select id="dept" name="dept" multiple>
+    <option value="cs" selected>Computer Science</option>
+    <option value="se">Software Engineering</option>
+    <option value="ee">Electrical Engineering</option>
+  </select>
+  <br><br>
+
+  Interests:
+  <input type="checkbox" id="web" name="interest" value="web">
+  <label for="web">Web</label>
+  <input type="checkbox" id="ai" name="interest" value="ai">
+  <label for="ai">AI</label>
+  <input type="checkbox" id="net" name="interest" value="networking">
+  <label for="net">Networking</label>
+  <input type="checkbox" id="game" name="interest" value="gaming">
+  <label for="game">Gaming</label>
+</fieldset>
+<br>
+
+<label for="photo">Profile photo:</label>
+<input type="file" id="photo" name="photo" accept="image/*">
+<br><br>
+
+<label for="about">About you:</label><br>
+<textarea id="about" name="about" rows="4" cols="40" maxlength="200"></textarea>
+<br><br>  
+<button type="submit">Register</button>
+<button type="reset">Clear</button>
+
+</body>
+</html>
